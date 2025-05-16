@@ -993,12 +993,12 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://admin.rustdesk.com".to_owned()
+    "http://api.ebai.cn".to_owned()
 }
 
 #[inline]
 pub fn is_public(url: &str) -> bool {
-    url.contains("rustdesk.com")
+    url.contains("api.ebai.cn")
 }
 
 pub fn get_audit_server(api: String, custom: String, typ: String) -> String {
